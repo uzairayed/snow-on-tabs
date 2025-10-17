@@ -1,0 +1,37 @@
+#rain-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 999999;
+  background: rgba(0,0,0,0.3); /* soft dark tint */
+  opacity: 0;
+  transition: opacity 2s ease;
+  overflow: hidden;
+}
+
+#rain-overlay.active {
+  opacity: 1;
+  backdrop-filter: blur(4px);
+}
+
+/* Create falling rain drops */
+.rain-drop {
+  position: absolute;
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(transparent, rgba(255,255,255,0.3));
+  animation: rainFall 0.6s linear infinite;
+  opacity: 0.4;
+  border-radius: 50%;
+}
+
+@keyframes rainFall {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}

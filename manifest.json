@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Rain on Tabs",
+  "version": "1.0",
+  "description": "Calm rain appears when you’re inactive for a while.",
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["rain.css"]
+    }
+  ],
+  "icons": {
+    "128": "icons/rain.png"
+  }
+}
