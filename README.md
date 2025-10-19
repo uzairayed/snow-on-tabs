@@ -67,7 +67,7 @@ You can change the idle delay or rain intensity by editing `content.js`:
 
 ## License
 
-MIT License. See `LICENSE` for details.
+MIT License. See [License](LICENSE) for details.
 
 ## Credits
 
