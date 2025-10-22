@@ -2,6 +2,10 @@
 
 Calm rain animation appears on your browser tab after a few seconds of inactivity. The rain fades away as soon as you interact with the page.
 
+## Demo
+
+![Rain demo](./assets/demo.gif)
+
 ## Features
 
 - Animated rain overlay after idle period (default: 5 seconds)
