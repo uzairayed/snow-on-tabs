@@ -1,17 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "Rain on Tabs",
+  "name": "Snow on Tabs",
   "version": "1.0",
-  "description": "Calm rain appears when you’re inactive for a while.",
+  "description": "Beautiful snowflakes appear when you're inactive for a while.",
   "permissions": ["scripting", "activeTab"],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": ["content.js"],
-      "css": ["rain.css"]
+      "css": ["snow.css"]
     }
   ],
   "icons": {
-    "128": "icons/rain.png"
+    "128": "icons/snow.png"
   }
 }

@@ -1,6 +1,6 @@
-# Rain on Tabs
+# Snow on Tabs
 
-Calm rain animation appears on your browser tab after a few seconds of inactivity. The rain fades away as soon as you interact with the page.
+Beautiful snowflake animation appears on your browser tab after a few seconds of inactivity. The snowflakes fade away as soon as you interact with the page.
 
 ## Demo
 
@@ -8,7 +8,11 @@ Calm rain animation appears on your browser tab after a few seconds of inactivit
 
 ## Features
 
-- Animated rain overlay after idle period (default: 5 seconds)
+- Animated snowflake overlay after idle period (default: 5 seconds)
+- Mixed movement patterns: gentle floating and dramatic swirling snowflakes
+- Detailed 6-pointed snowflake shapes with intricate patterns
+- Ground accumulation effect - snowflakes build up at the bottom
+- Winter-themed light blue background tint
 - Fades in/out smoothly
 - Disappears on any user interaction (mouse, keyboard, scroll, touch)
 - Lightweight, no external dependencies
@@ -18,7 +22,7 @@ Calm rain animation appears on your browser tab after a few seconds of inactivit
 1. **Clone or Download the Repository**
 	- Download this folder to your computer, or clone with:
 	  ```sh
-	  git clone https://github.com/IamMoosa/rain-on-tabs.git
+	  git clone https://github.com/IamMoosa/snow-on-tabs.git
 	  ```
 
 2. **Open Chrome Extensions Page**
@@ -30,44 +34,46 @@ Calm rain animation appears on your browser tab after a few seconds of inactivit
 	- Select the folder containing this project (the folder with `manifest.json`).
 
 4. **Verify Installation**
-	- The extension should appear in your list, with the rain icon.
+	- The extension should appear in your list, with the snowflake icon.
 	- Open any webpage or new tab to test.
 
 ## Usage
 
 1. **Wait for Inactivity**
-	- After 5 seconds of no mouse, keyboard, scroll, or touch activity, a rain animation will fade in over the page.
+	- After 5 seconds of no mouse, keyboard, scroll, or touch activity, a snowflake animation will fade in over the page.
 
 2. **Interact to Dismiss**
-	- Move your mouse, press any key, scroll, click, or touch the page to instantly fade out the rain overlay.
+	- Move your mouse, press any key, scroll, click, or touch the page to instantly fade out the snowflake overlay.
 
 3. **Repeat**
-	- The rain will reappear after another idle period.
+	- The snowflakes will reappear after another idle period, and accumulation will gradually build up.
 
 ## Customization
 
-You can change the idle delay or rain intensity by editing `content.js`:
+You can change the idle delay or snowflake intensity by editing `content.js`:
 
 - **Idle Delay**: At the top of `content.js`, change the value of `IDLE_DELAY` (milliseconds).
   ```js
   const IDLE_DELAY = 5000; // ms
   ```
-- **Rain Intensity**: Change `maxDrops` or `spawnRate` in `content.js` for more or fewer raindrops.
+- **Snowflake Intensity**: Change `maxSnowflakes` or spawn rate in `content.js` for more or fewer snowflakes.
+- **Movement Mix**: Adjust the ratio of gentle vs dramatic snowflakes (currently 70% gentle, 30% dramatic).
+- **Accumulation**: Modify `maxAccumulation` to control how much snow builds up at the bottom.
 
 ## Troubleshooting
 
-- **Rain doesn't appear?**
+- **Snowflakes don't appear?**
   - Make sure the extension is enabled and loaded in Developer mode.
   - Reload the extension after making code changes.
   - Try on a regular webpage (some Chrome pages block content scripts).
-- **Artifacts or flicker?**
-  - Ensure you have the latest code. The animation is designed to be smooth and streak-like, not a single square.
+- **Performance issues?**
+  - The animation is optimized for smooth performance. If you experience lag, try reducing `maxSnowflakes` in `content.js`.
   - If you use display scaling (e.g., 125%, 150%), the animation should still look correct. If not, report the issue.
 
 ## Uninstalling
 
 1. Go to `chrome://extensions`.
-2. Find "Rain on Tabs" and click **Remove**.
+2. Find "Snow on Tabs" and click **Remove**.
 
 ## License
 
