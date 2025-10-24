@@ -1,5 +1,7 @@
 # Snow on Tabs
 
+> **Note**: This is a fork of [IamMoosa/rain-on-tabs](https://github.com/IamMoosa/rain-on-tabs) that transforms the original rain animation into a beautiful snowflake experience.
+
 Beautiful snowflake animation appears on your browser tab after a few seconds of inactivity. The snowflakes fade away as soon as you interact with the page.
 
 ## Demo
@@ -22,7 +24,7 @@ Beautiful snowflake animation appears on your browser tab after a few seconds of
 1. **Clone or Download the Repository**
 	- Download this folder to your computer, or clone with:
 	  ```sh
-	  git clone https://github.com/IamMoosa/snow-on-tabs.git
+	  git clone https://github.com/uzairayed/snow-on-tabs.git
 	  ```
 
 2. **Open Chrome Extensions Page**
@@ -81,4 +83,8 @@ MIT License. See [License](LICENSE) for details.
 
 ## Credits
 
-Vibe Coded with ❤️ by [Moosa Raza](https://www.linkedin.com/in/syed-moosa-raza-rizvi).
+**Snow on Tabs** - Snowflake animation conversion by [Syed Uzair Ahmed](https://github.com/uzairayed)
+
+**Original "Rain on Tabs"** - Created with ❤️ by [Moosa Raza](https://www.linkedin.com/in/syed-moosa-raza-rizvi)
+- Original repository: [IamMoosa/rain-on-tabs](https://github.com/IamMoosa/rain-on-tabs)
+- This project is a fork that transforms the rain animation into a winter snowflake experience
